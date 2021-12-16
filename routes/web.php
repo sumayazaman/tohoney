@@ -20,3 +20,17 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::view('/', 'index');
+Route::view('/about', 'about');
+Route::view('/blog-details', 'blog-details');
+Route::view('/blog', 'blog');
+Route::view('/cart', 'cart');
+Route::view('/checkout', 'checkout');
+Route::view('/contact', 'contact');
+Route::view('/faq', 'faq');
+Route::view('/login-tohoney', 'login');
+Route::view('/register-tohoney', 'register');
+Route::view('/shop', 'shop');
+Route::view('/single-product', 'single-product');
+Route::view('/wishlist', 'wishlist');
